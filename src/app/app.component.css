@@ -1,81 +1,37 @@
-/* body {
-    text-align: center;
-    padding: 150px;
-    color: #333;
-    font-size: bold;
+h1{
+  color: #F7B223;
+  text-align: center;
 }
 
-h1 {
-    font-size: 50px;
+a{
+  color: #FCDD17;
 }
 
-article {
-    display: block;
-    text-align: left;
-    width: 650px;
-    margin: 0 auto;
+a.hover{
+  color: #FC7517;
 }
 
-a {
-    color: #dc8100;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #333;
-    text-decoration: none;
-}
-
-
-@media screen and (max-width: 768px) {
-    .cont{
-        width: 100%;
-    }
-} */
-
-
-/* ---------------------------------------- */
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+.content{
   position: relative;
-}
-
-.content {
-  background: white;
-  padding: 2em;
-  box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-h1 {
-  color: #F5492F;
+  z-index: 1;
+  background-color: #1E95D9;
+  color: #eee;
+  max-width: 50%;
+  margin: 0 auto 100px;
+  padding: 45px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.24);
+  margin-top: 15%;
 }
 
 /* 
     TODO: Aggiustare il blocco in centro schermo per i telefoni.
 */
 @media screen and (max-width: 900px) {
-    /* TODO: fix...*/
-  .center {
-    top: 10%;
-    left: 10%;
-  }
-
-  /* * Funziona */
-  h1 {
-    color: blue;
+  .content{
+    margin: 0 auto 10px;
+    padding: 20px;
+    max-width: 70%;
+    top: 150px;
+    text-align: justify;
   }
 }

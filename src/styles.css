@@ -4,3 +4,12 @@
 html{
     font-family: 'Titillium Web', sans-serif;
 }
+
+body{
+    background: #2DDBF0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #2DDBF0, #1657F0);
+    background: -moz-linear-gradient(right, #2DDBF0, #1657F0);
+    background: -o-linear-gradient(right, #2DDBF0, #1657F0);
+    background: linear-gradient(to left, #2DDBF0, #1657F0);
+  }
+  
