@@ -37,7 +37,7 @@ body {
 }
 
 /* 
-    TODO: Aggiustare il blocco in centro schermo per i telefoni.
+    TODO: FIXARE POSIZIONE BOTTONI
 */
 @media screen and (max-width: 900px) {
   .content{
@@ -47,6 +47,11 @@ body {
     top: 150px;
     text-align: justify;
   }
+
+  .btn_content{
+    padding-top: 100px;
+    flex-direction: column;
+  }
 }
 
 
@@ -55,6 +60,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
 }
 
 .btn{
@@ -71,12 +79,8 @@ body {
   text-align:center;
   border: none;
   background-size: 300% 100%;
-
+  display: inline-block;
   border-radius: 50px;
-  /* moz-transition: all .4s ease-in-out; */
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
 }
 
 .btn:hover {
@@ -91,6 +95,7 @@ body {
   outline: none;
 }
 
+/* ---------- COLOR ---------- */
 .Purple{
   background-image: linear-gradient(to right, #6889FF, #C668FF);
   box-shadow: 0 4px 15px 0 #905CFF;
