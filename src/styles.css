@@ -6,10 +6,10 @@ html{
 }
 
 body{
-    background: #2DDBF0; /* fallback for old browsers */
-    background: -webkit-linear-gradient(right, #2DDBF0, #1657F0);
-    background: -moz-linear-gradient(right, #2DDBF0, #1657F0);
-    background: -o-linear-gradient(right, #2DDBF0, #1657F0);
-    background: linear-gradient(to left, #2DDBF0, #1657F0);
-  }
+    background: #5B7FFF; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #5B7FFF, #33CCFC);
+    background: -moz-linear-gradient(right, #5B7FFF, #33CCFC);
+    background: -o-linear-gradient(right, #5B7FFF, #33CCFC);
+    background: linear-gradient(to right, #5B7FFF, #33CCFC);
+}
   

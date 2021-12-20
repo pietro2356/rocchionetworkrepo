@@ -35,3 +35,74 @@ a.hover{
     text-align: justify;
   }
 }
+
+
+/* BUTTON */
+.btn_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn{
+  margin: 10%;
+  text-align: center;
+
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  /* moz-transition: all .4s ease-in-out; */
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn:hover {
+  background-position: 100% 0;
+  /* moz-transition: all .4s ease-in-out; */
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn:focus{
+  outline: none;
+}
+
+.btn.Purple{
+  background-image: linear-gradient(to right, #6889FF, #C668FF);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+.btn.Peach{
+  background-image: linear-gradient(to right, #FF6868, #FF68DE);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+.btn.Sunset{
+  background-image: linear-gradient(to right, #FDC639, #FF7C60);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+.btn.Night{
+  background-image: linear-gradient(to right, #403F44, #1E1B32);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+.btn.Synthwave{
+  background-image: linear-gradient(to right, #FF9E68, #FF68DE);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+.btn.Grass{
+  background-image: linear-gradient(to right, #45C270, #21CDC3);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+.btn.Ocean{
+  background-image: linear-gradient(to right, #5B7FFF, #33CCFC);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
