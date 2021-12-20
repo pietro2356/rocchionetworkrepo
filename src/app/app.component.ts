@@ -1,36 +1,45 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 
 export class AppComponent {
+
+  constructor(){
+    document.body.style.background = "background-image: linear-gradient(to right, #6889FF, #C668FF);";
+  }
+  ngOnDestroy(){
+    document.body.style.background = "#FF0000";
+  }
+
   title = 'rocchionetwork.com';
 
   changeColor(color:string){
     switch(color){
       case 'Purple':
-        alert('Purple');
+        alert(color);
         break;
       case 'Peach':
-        alert('Peach');
+        alert(color);
         break;
       case 'Sunset':
-        alert('Sunset');
+        alert(color);
         break;
       case 'Night':
-        alert('Night');
+        alert(color);
         break;
       case 'Synthwave':
-        alert('Synthwave');
+        alert(color);
         break;
       case 'Grass':
-        alert('Grass');
+        alert(color);
         break;
       case 'Ocean':
-        alert('Ocean');
+        alert(color);
         break;
       default: 
         alert('none');

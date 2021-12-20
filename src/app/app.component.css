@@ -11,6 +11,15 @@ a.hover{
   color: #FC7517;
 }
 
+/* TODO: Da sistemare */
+body{
+  background: #FF6868; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #FF6868, #FF68DE);
+  background: -moz-linear-gradient(right, #FF6868, #FF68DE);
+  background: -o-linear-gradient(right, #FF6868, #FF68DE);
+  background: linear-gradient(to right, #FF6868, #FF68DE);
+}
+
 .content{
   position: relative;
   z-index: 1;
@@ -103,6 +112,6 @@ a.hover{
   box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
 .btn.Ocean{
-  background-image: linear-gradient(to right, #5B7FFF, #33CCFC);
+  background-image: linear-gradient(to right, #FF6868, #FF68DE);
   box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
