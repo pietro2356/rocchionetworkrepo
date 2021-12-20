@@ -12,12 +12,16 @@ a.hover{
 }
 
 /* TODO: Da sistemare */
-body{
-  background: #FF6868; /* fallback for old browsers */
+/* body{
+  background: #FF6868; /* fallback for old browsers 
   background: -webkit-linear-gradient(right, #FF6868, #FF68DE);
   background: -moz-linear-gradient(right, #FF6868, #FF68DE);
   background: -o-linear-gradient(right, #FF6868, #FF68DE);
   background: linear-gradient(to right, #FF6868, #FF68DE);
+} */
+
+body {
+  background: #EEE;
 }
 
 .content{
@@ -46,7 +50,7 @@ body{
 }
 
 
-/* BUTTON */
+/* ---------- BUTTON ---------- */
 .btn_content {
   display: flex;
   align-items: center;

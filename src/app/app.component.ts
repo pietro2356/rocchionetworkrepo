@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit, OnDestroy, Inject } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,13 +8,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 
 export class AppComponent {
-
-  constructor(){
-    document.body.style.background = "background-image: linear-gradient(to right, #6889FF, #C668FF);";
-  }
-  ngOnDestroy(){
-    document.body.style.background = "#FF0000";
-  }
 
   title = 'rocchionetwork.com';
 
