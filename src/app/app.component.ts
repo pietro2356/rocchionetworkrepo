@@ -11,7 +11,7 @@ export class AppComponent {
   color = "linear-gradient(to right, #6889FF, #C668FF)";
 
   changeColor(color:string){
-    console.log(color);
+    //console.log(color);
     switch(color){
       case 'Purple':
         this.color = "linear-gradient(to right, #6889FF, #C668FF)";
