@@ -1,45 +1,38 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./app.component.css']
 })
 
 export class AppComponent {
-
-  constructor(){
-    document.body.style.background = "background-image: linear-gradient(to right, #6889FF, #C668FF);";
-  }
-  ngOnDestroy(){
-    document.body.style.background = "#FF0000";
-  }
-
   title = 'rocchionetwork.com';
+  color = "linear-gradient(to right, #6889FF, #C668FF)";
 
   changeColor(color:string){
+    console.log(color);
     switch(color){
       case 'Purple':
-        alert(color);
+        this.color = "linear-gradient(to right, #6889FF, #C668FF)";
         break;
       case 'Peach':
-        alert(color);
+        this.color = "linear-gradient(to right, #FF6868, #FF68DE)";
         break;
       case 'Sunset':
-        alert(color);
+        this.color = "linear-gradient(to right, #FDC639, #FF7C60)";
         break;
       case 'Night':
-        alert(color);
+        this.color = "linear-gradient(to right, #403F44, #1E1B32)";
         break;
       case 'Synthwave':
-        alert(color);
+        this.color = "linear-gradient(to right, #FF9E68, #FF68DE)";
         break;
       case 'Grass':
-        alert(color);
+        this.color = "linear-gradient(to right, #45C270, #21CDC3)";
         break;
       case 'Ocean':
-        alert(color);
+        this.color = "linear-gradient(to right, #5B7FFF, #33CCFC)";
         break;
       default: 
         alert('none');

@@ -1,5 +1,5 @@
 h1{
-  color: #F7B223;
+  color: white;
   text-align: center;
 }
 
@@ -12,28 +12,32 @@ a.hover{
 }
 
 /* TODO: Da sistemare */
-body{
-  background: #FF6868; /* fallback for old browsers */
+/* body{
+  background: #FF6868; /* fallback for old browsers 
   background: -webkit-linear-gradient(right, #FF6868, #FF68DE);
   background: -moz-linear-gradient(right, #FF6868, #FF68DE);
   background: -o-linear-gradient(right, #FF6868, #FF68DE);
   background: linear-gradient(to right, #FF6868, #FF68DE);
+} */
+
+body {
+  background: #EEE;
 }
 
 .content{
   position: relative;
   z-index: 1;
-  background-color: #1E95D9;
+  /* background-color: #1E95D9; */
   color: #eee;
   max-width: 50%;
   margin: 0 auto 100px;
   padding: 45px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.24);
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 /* 
-    TODO: Aggiustare il blocco in centro schermo per i telefoni.
+    TODO: FIXARE POSIZIONE BOTTONI
 */
 @media screen and (max-width: 900px) {
   .content{
@@ -43,14 +47,22 @@ body{
     top: 150px;
     text-align: justify;
   }
+
+  .btn_content{
+    padding-top: 100px;
+    flex-direction: column;
+  }
 }
 
 
-/* BUTTON */
+/* ---------- BUTTON ---------- */
 .btn_content {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
 }
 
 .btn{
@@ -67,12 +79,8 @@ body{
   text-align:center;
   border: none;
   background-size: 300% 100%;
-
+  display: inline-block;
   border-radius: 50px;
-  /* moz-transition: all .4s ease-in-out; */
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
 }
 
 .btn:hover {
@@ -87,31 +95,32 @@ body{
   outline: none;
 }
 
-.btn.Purple{
+/* ---------- COLOR ---------- */
+.Purple{
   background-image: linear-gradient(to right, #6889FF, #C668FF);
-  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  box-shadow: 0 4px 15px 0 #905CFF;
 }
-.btn.Peach{
+.Peach{
   background-image: linear-gradient(to right, #FF6868, #FF68DE);
-  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  box-shadow: 0 4px 15px 0 #FF8B5C;
 }
-.btn.Sunset{
+.Sunset{
   background-image: linear-gradient(to right, #FDC639, #FF7C60);
-  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  box-shadow: 0 4px 15px 0 #FE932E;
 }
-.btn.Night{
+.Night{
   background-image: linear-gradient(to right, #403F44, #1E1B32);
-  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  box-shadow: 0 4px 15px 0 #56515C;
 }
-.btn.Synthwave{
+.Synthwave{
   background-image: linear-gradient(to right, #FF9E68, #FF68DE);
-  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  box-shadow: 0 4px 15px 0 #FF655C;
 }
-.btn.Grass{
+.Grass{
   background-image: linear-gradient(to right, #45C270, #21CDC3);
-  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  box-shadow: 0 4px 15px 0 #40CFC3;
 }
-.btn.Ocean{
-  background-image: linear-gradient(to right, #FF6868, #FF68DE);
-  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+.Ocean{
+  background-image: linear-gradient(to right, #5B7FFF, #33CCFC);
+  box-shadow: 0 4px 15px 0 #4FD2FF;
 }
