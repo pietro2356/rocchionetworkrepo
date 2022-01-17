@@ -36,40 +36,18 @@ body {
   margin-top: 10%;
 }
 
-/* 
-    TODO: FIXARE POSIZIONE BOTTONI
-*/
-@media screen and (max-width: 900px) {
-  .content{
-    margin: 0 auto 10px;
-    padding: 20px;
-    max-width: 70%;
-    top: 150px;
-    text-align: justify;
-  }
-
-  .btn_content{
-    padding-top: 100px;
-    flex-direction: column;
-  }
-}
-
 
 /* ---------- BUTTON ---------- */
-.btn_content {
+.btn_content{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 90%;
+  flex-wrap: wrap;
+
   margin: 40px auto;
-  text-align: center;
 }
 
 .btn{
-  margin: 10%;
-  text-align: center;
+  flex: 1 1 100px;
 
-  width: 200px;
   font-size: 16px;
   font-weight: 600;
   color: #fff;
